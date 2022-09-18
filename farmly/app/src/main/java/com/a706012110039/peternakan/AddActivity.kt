@@ -40,6 +40,7 @@ class AddActivity : AppCompatActivity() {
         getintent()
         listener()
     }
+    //tes update
 
     private fun getintent(){
         position = intent.getIntExtra("position", -1)
@@ -96,6 +97,7 @@ class AddActivity : AppCompatActivity() {
         hewan.imageuri = image.toUri().toString()
         if(hewan.imageuri!!.isEmpty()){
             isCompleted = false
+            Toast.makeText(this, "Image cannot be empty", Toast.LENGTH_SHORT).show()
         }
 
         if(viewbind.usiahewan.editText?.text.toString().isEmpty() || viewbind.usiahewan.editText?.text.toString().toInt() < 0)

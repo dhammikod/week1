@@ -25,6 +25,8 @@ class rvadapter(val listhewan: ArrayList<hewan>, val cardlistener: cardlistener)
             if (data.imageuri!!.isNotEmpty()) {
                 binding.imageView3.setImageURI(Uri.parse(data.imageuri))
             }
+
+
             binding.delete.setOnClickListener {
                 cardlistener.onCardClick(false, position)
             }

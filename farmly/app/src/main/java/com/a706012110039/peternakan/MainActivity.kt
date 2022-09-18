@@ -53,12 +53,12 @@ class MainActivity : AppCompatActivity(),cardlistener {
     override fun onCardClick(isEdit : Boolean,position: Int) {
         if(!isEdit){
             val builder = AlertDialog.Builder(this)
-            builder.setTitle("Delete movie")
-            builder.setMessage("Are you sure you want to delete this movie?")
+            builder.setTitle("Delete animal")
+            builder.setMessage("Are you sure you want to delete this animal?")
             //builder.setPositiveButton("OK", DialogInterface.OnClickListener(function = x))
 
             builder.setPositiveButton(android.R.string.yes) { function, which ->
-                val snackbar = Snackbar.make(viewbind.listdata, "Movie Deleted", Snackbar.LENGTH_INDEFINITE)
+                val snackbar = Snackbar.make(viewbind.listdata, "Animal Deleted", Snackbar.LENGTH_INDEFINITE)
                 snackbar.setAction("Dismiss") { snackbar.dismiss() }
                 snackbar.setActionTextColor(Color.WHITE)
                 snackbar.setBackgroundTint(Color.GRAY)
@@ -74,9 +74,6 @@ class MainActivity : AppCompatActivity(),cardlistener {
                     android.R.string.no, Toast.LENGTH_SHORT).show()
             }
             builder.show()
-
-
-
         }else{
             val intent = Intent(this, AddActivity::class.java).putExtra("position",position)
             startActivity(intent)

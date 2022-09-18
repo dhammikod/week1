@@ -24,7 +24,7 @@
                 android:layout_marginTop="16dp"
                 android:scrollbarFadeDuration="0"
                 android:scrollbarSize="0dp"
-                app:cardBackgroundColor="#00F3EDED"
+                app:cardBackgroundColor="#F3EDED"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="0dp"
                 app:cardMaxElevation="0dp"
@@ -43,9 +43,11 @@
                         android:layout_width="141dp"
                         android:layout_height="178dp"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
                         app:cardBackgroundColor="#00FFFFFF"
                         app:cardCornerRadius="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
@@ -58,6 +60,7 @@
                                 android:id="@+id/imageView3"
                                 android:layout_width="160dp"
                                 android:layout_height="match_parent"
+                                android:elevation="20dp"
                                 android:scaleType="fitXY"
                                 tools:srcCompat="@tools:sample/avatars" />
                         </LinearLayout>
@@ -71,6 +74,7 @@
                         android:layout_marginStart="24dp"
                         android:gravity="center"
                         android:text="Namahewan"
+                        android:textColor="#000000"
                         android:textSize="24sp"
                         app:layout_constraintStart_toEndOf="@+id/cardView"
                         app:layout_constraintTop_toTopOf="@+id/cardView" />
@@ -83,6 +87,7 @@
                         android:layout_marginTop="16dp"
                         android:gravity="center"
                         android:text="Namahewan"
+                        android:textColor="#000000"
                         android:textSize="24sp"
                         app:layout_constraintStart_toEndOf="@+id/cardView"
                         app:layout_constraintTop_toBottomOf="@+id/Namahewan" />
@@ -95,6 +100,7 @@
                         android:layout_marginTop="16dp"
                         android:gravity="center"
                         android:text="Namahewan"
+                        android:textColor="#000000"
                         android:textSize="24sp"
                         app:layout_constraintStart_toEndOf="@+id/cardView"
                         app:layout_constraintTop_toBottomOf="@+id/jenishewan" />
@@ -104,7 +110,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="44dp"
                         android:layout_marginTop="16dp"
-                        android:backgroundTint="#BD6E49"
+                        android:backgroundTint="@color/green"
                         android:text="Edit"
                         app:layout_constraintStart_toStartOf="@+id/usiahewan"
                         app:layout_constraintTop_toBottomOf="@+id/usiahewan" />
@@ -115,7 +121,7 @@
                         android:layout_height="46dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
-                        android:backgroundTint="#D81111"
+                        android:backgroundTint="@color/green"
                         android:text="Delete"
                         app:layout_constraintStart_toEndOf="@+id/edit"
                         app:layout_constraintTop_toBottomOf="@+id/usiahewan" />
