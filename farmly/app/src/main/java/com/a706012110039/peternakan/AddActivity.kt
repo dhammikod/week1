@@ -46,6 +46,7 @@ class AddActivity : AppCompatActivity() {
         position = intent.getIntExtra("position", -1)
         if(position != -1){
             val hewan = globalvar.listDatahewan[position]
+            image = hewan.imageuri.toString()
             viewbind.toolbar2.title = "Edit animal"
             viewbind.Addanimal.text = "Edit Animal"
             viewbind.imageView2.setImageURI(Uri.parse(globalvar.listDatahewan[position].imageuri))

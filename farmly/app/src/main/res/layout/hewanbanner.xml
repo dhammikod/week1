@@ -26,8 +26,8 @@
                 android:scrollbarSize="0dp"
                 app:cardBackgroundColor="#F3EDED"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="0dp"
-                app:cardMaxElevation="0dp"
+                app:cardElevation="20dp"
+                app:cardMaxElevation="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +47,8 @@
                         android:layout_marginBottom="8dp"
                         app:cardBackgroundColor="#00FFFFFF"
                         app:cardCornerRadius="5dp"
+                        app:cardElevation="20dp"
+                        app:cardMaxElevation="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -113,7 +115,8 @@
                         android:backgroundTint="@color/green"
                         android:text="Edit"
                         app:layout_constraintStart_toStartOf="@+id/usiahewan"
-                        app:layout_constraintTop_toBottomOf="@+id/usiahewan" />
+                        app:layout_constraintTop_toBottomOf="@+id/usiahewan"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/delete"
@@ -124,7 +127,8 @@
                         android:backgroundTint="@color/green"
                         android:text="Delete"
                         app:layout_constraintStart_toEndOf="@+id/edit"
-                        app:layout_constraintTop_toBottomOf="@+id/usiahewan" />
+                        app:layout_constraintTop_toBottomOf="@+id/usiahewan"
+                        tools:ignore="TouchTargetSizeCheck" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
